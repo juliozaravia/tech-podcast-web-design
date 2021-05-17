@@ -1,0 +1,219 @@
+<!--*
+ * Project: Podcast Project
+ * File: Index - HTML structure file
+ * Description: It allows us to organize the structure of the webapp and determine the elements that we will use. 
+ * @author
+ * Julio Zaravia <julio.zaravia.dev@gmail.com>
+ *-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/default.css">
+  <link rel="stylesheet" href="./styles/custom.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=IBM+Plex+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/81670265ac.js" crossorigin="anonymous"></script>
+  <title>Julio Zaravia | Podcasts</title>
+</head>
+
+<body>
+  <header id="header" class="container outer vertical__short">
+    <nav id="hamburguer__navigation" class="container inner">
+      <div class="menu menu__logo">
+        <img src="./utils/images/logo.svg" alt="logo" class="logo">
+      </div>
+      <input type="checkbox" id="hamburger" />
+      <label id="hamburguer__label" for="hamburger">
+        <span class="line__top"></span>
+        <span class="line__middle"></span>
+        <span class="line__bottom"></span>
+      </label>
+      <div id="hamburguer__items" class="menu menu__navigation">
+        <ul class="navigation">
+          <li class="navigation__item">
+            <a href="#episodes">episodios</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#about">nosotros</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#guests">entrevistas</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#topics">topics</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section id="welcome" class="container outer vertical__banner">
+    <section class="container inner">
+      <section class="welcome">
+        <h1 class="welcome__title">Hello <span class="welcome__title--cross">world</span> pale blue dot<span class="welcome__title--dot">.</span></h1>
+        <p class="welcome__caption">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+        <a class="welcome__button" href="#about">conoce más</a>
+      </section>
+    </section>
+  </section>
+  <section id="episodes" class="container outer vertical__cpolygon bg__blue">
+    <section class="container inner">
+      <h2 class="episodes__title episodes__title--special">Episodes</h2>
+      <section class="episodes">
+        <section class="episodes__list">
+          <article class="episode">
+            <iframe class="episode__item" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </article>
+          <article class="episode">
+            <iframe class="episode__item" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </article>
+          <article class="episode">
+            <iframe class="episode__item" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </article>
+          <article class="episode">
+            <iframe class="episode__item" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </article>
+        </section>
+      </section>
+    </section>
+  </section>
+  <section id="about" class="container outer vertical__large">
+    <section class="container inner">
+      <section class="about">
+        <article class="about__figure">
+          <img src="./utils/images/phone.png" alt="De dónde venimos" title="De dónde venimos">
+        </article>
+        <article class="description about__description">
+          <h2 class="description__title">
+            De dónde venimos
+          </h2>
+          <div class="description__content">
+            <p class="paragraph__estandar">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p>
+            <p class="paragraph__estandar">Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+          </div>
+        </article>
+      </section>
+    </section>
+  </section>
+  <section id="guests" class="container outer">
+    <section class="container inner">
+      <h2 class="description__title guests__title--special">
+        Invitadas/os estelares
+      </h2>
+    </section>
+    <section>
+      <ul class="guests">
+        <li class="guests__item">
+          <img src="./utils/images/guest-1.png" alt="Invitadas estelares">
+        </li>
+        <li class="guests__item">
+          <img src="./utils/images/guest-2.png" alt="Invitadas estelares">
+        </li>
+        <li class="guests__item">
+          <img src="./utils/images/guest-3.png" alt="Invitadas estelares">
+        </li>
+        <li class="guests__item">
+          <img src="./utils/images/guest-4.png" alt="Invitadas estelares">
+        </li>
+        <li class="guests__item">
+          <img src="./utils/images/guest-5.png" alt="Invitadas estelares">
+        </li>
+        <li class="guests__item">
+          <img src="./utils/images/guest-6.png" alt="Invitadas estelares">
+        </li>
+      </ul>
+    </section>
+  </section>
+  <section id="topics" class="container outer vertical__topics">
+    <section class="container inner">
+      <section class="topics">
+        <h2 class="topics__title topics__title--special">
+          Algunos de nuestros temas
+        </h2>
+        <section class="topics__list">
+          <article class="topics__list--item">
+            <div>
+              <img src="./utils/images/icon1.svg" alt="Trabajo remoto">
+            </div>
+            <h3>Trabajo remoto</h3>
+          </article>
+          <article class="topics__list--item">
+            <div>
+              <img src="./utils/images/icon2.svg" alt="Repensando la programación">
+            </div>
+            <h3>Repensando la programación</h3>
+          </article>
+          <article class="topics__list--item">
+            <div>
+              <img src="./utils/images/icon3.svg" alt="Bases del código">
+            </div>
+            <h3>Bases del código</h3>
+          </article>
+          <article class="topics__list--item">
+            <div>
+              <img src="./utils/images/icon4.svg" alt="Seguridad informática">
+            </div>
+            <h3>Seguridad informática</h3>
+          </article>
+        </section>
+      </section>
+    </section>
+  </section>
+  <section id="news" class="container outer vertical__spolygon bg__blue">
+    <section class="container inner">
+      <section class="news">
+        <h3 class="news__title">¿Querés las últimas novedades?</h3>
+        <a class="news__button" href="#episodes">escucha los episodios</a>
+      </section>
+    </section>
+  </section>
+  <footer id="#footer" class="container outer vertical__footer">
+    <section class="container inner">
+      <section class="footer">
+        <section class="footer__rights">
+          @ 2021 - Hello blue pale dot
+        </section>
+        <section class="footer__social">
+          <ul class="social">
+            <li class="social__item">
+              <a href="https://www.spotify.com">
+                <i class="fab fa-spotify" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.instagram.com">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.twitter.com">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.facebook.com">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.telegram.org">
+                <i class="fab fa-telegram" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </section>
+  </footer>
+</body>
+
+</html>

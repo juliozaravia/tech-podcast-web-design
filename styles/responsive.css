@@ -1,0 +1,241 @@
+/*
+ * Project: Podcast Project 
+ * File: Responsive Styles - Responsive UI style file
+ * Description: It allows us to set the visual styles of the webapp's user interface for mobile phone screens. 
+ * @author
+ * Julio Zaravia <julio.zaravia.dev@gmail.com>
+ */
+
+@media only screen and (max-width: 900px) {
+	.inner {
+		width: 96%;
+	}
+
+	.welcome {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.vertical__banner {
+		padding: 50px 0px 0px;
+	}
+
+	.vertical__cpolygon {
+		padding: 180px 0px;
+	}
+
+	.about__figure img {
+		bottom: -25px;
+	}
+
+	.episodes__title--special,
+	.guests__title--special,
+	.topics__title--special {
+		margin-left: 0;
+	}
+
+	.vertical__large {
+		padding: 0px 0px 50px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.welcome__title {
+		line-height: 42px;
+		margin-bottom: 25px;
+	}
+
+	.welcome__caption {
+		width: 100%;
+	}
+
+	.inner {
+		width: 85%;
+	}
+
+	.welcome {
+		width: 100%;
+	}
+
+	.welcome__caption {
+		margin-bottom: 35px;
+	}
+
+	.welcome__button {
+		width: 100%;
+	}
+
+	.vertical__cpolygon {
+		padding: 60px 0px 280px;
+		clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+	}
+
+	.vertical__banner {
+		padding: 20px 0px 30px;
+	}
+
+	.episode {
+		width: 100%;
+	}
+
+	.episode:nth-child(odd) {
+		margin-right: 0;
+	}
+
+	.episode:nth-child(n + 2) {
+		margin-top: 20px;
+	}
+
+	.episodes__title {
+		margin-bottom: 20px;
+	}
+
+	.episodes__title--special {
+		padding-top: 50px;
+	}
+
+	.about__figure {
+		width: 100%;
+	}
+
+	.about__figure img {
+		width: 100%;
+		bottom: -300px;
+	}
+
+	.about__description {
+		margin-left: 0%;
+		width: 100%;
+		padding-top: 320px;
+	}
+
+	.about {
+		width: 100%;
+	}
+
+	.description__title,
+	.topics__title,
+	.episodes__title,
+	.welcome__title {
+		font-size: 36px;
+	}
+
+	.vertical__large {
+		padding: 0px;
+	}
+
+	.guests__item {
+		width: 100%;
+	}
+
+	.topics__list--item {
+		width: 100%;
+	}
+
+	.topics__list--item:nth-child(n + 2) {
+		margin-top: 70px;
+	}
+
+	.topics__list {
+		width: 100%;
+		margin-top: 40px;
+	}
+
+	.topics__list--item h3 {
+		margin-top: 0px;
+	}
+
+	.news__title {
+		font-size: 36px;
+	}
+
+	.news__button {
+		width: 100%;
+	}
+
+	.vertical__spolygon {
+		padding: 90px 0px 80px;
+		clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+	}
+
+	.footer__rights,
+	.footer__social {
+		width: 100%;
+		text-align: center;
+	}
+
+	.social__item {
+		margin-left: 0;
+		padding: 20px 20px 0;
+	}
+
+	#hamburguer__navigation label {
+		display: inline-block;
+		font-style: normal;
+		font-size: 1.5rem;
+		padding-top: 13px;
+		position: absolute;
+		right: 30px;
+		color: #060a24;
+	}
+
+	#hamburguer__items ul {
+		position: absolute;
+		z-index: 100;
+		margin-top: 35px;
+		left: 0;
+		background-color: #0000ec;
+		width: 100%;
+	}
+
+	#hamburguer__items li {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+	}
+
+	#hamburguer__items a {
+		color: #ffffff;
+	}
+
+	#hamburguer__items {
+		opacity: 0;
+		-webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+		transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+	}
+	#hamburguer__navigation input:checked ~ #hamburguer__items {
+		opacity: 1;
+	}
+
+	.navigation__item {
+		margin-left: 0;
+		padding: 16px 14px;
+	}
+
+	.menu__navigation {
+		text-align: left;
+	}
+
+	#hamburguer__items a:hover,
+	#hamburguer__items a:active {
+		color: #00f3bb;
+		text-decoration: line-through;
+	}
+
+	#hamburguer__navigation input:checked ~ #hamburguer__label .line__top {
+		transform: rotate(45deg);
+		margin-top: 6px;
+	}
+
+	#hamburguer__navigation input:checked ~ #hamburguer__label .line__middle {
+		background-color: transparent;
+		display: none;
+		visibility: hidden;
+		margin-top: 0;
+	}
+
+	#hamburguer__navigation input:checked ~ #hamburguer__label .line__bottom {
+		transform: rotate(-45deg);
+		margin-top: -3px;
+	}
+}

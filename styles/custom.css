@@ -1,0 +1,388 @@
+/*
+ * Project: Podcast Project 
+ * File: Styles - UI style file
+ * Description: It allows us to set the visual styles of the webapp's user interface. 
+ * @author
+ * Julio Zaravia <julio.zaravia.dev@gmail.com>
+ */
+
+/*
+* HEADER SECTION
+*/
+
+.menu__logo,
+.menu__navigation {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1rem;
+}
+
+.menu__logo {
+	text-align: left;
+	width: 30%;
+}
+
+.menu__logo img {
+	padding-top: 7px;
+	width: 40px;
+	height: 40px;
+}
+
+.menu__navigation {
+	text-align: right;
+	width: 70%;
+}
+
+.navigation {
+	display: inline-block;
+}
+
+.navigation__item {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 50px;
+}
+
+.navigation__item a {
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #060a24;
+}
+
+.navigation__item a:hover {
+	text-decoration: line-through;
+	color: #00f3bb;
+}
+
+#hamburguer__navigation label,
+#hamburger {
+	display: none;
+}
+
+.line__top,
+.line__middle,
+.line__bottom {
+	background-color: #060a24;
+	width: 30px;
+	height: 3px;
+	display: block;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+	transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.line__middle,
+.line__bottom {
+	margin-top: 4px;
+}
+
+/*
+* WELCOME SECTION
+*/
+
+.welcome {
+	width: 70%;
+	font-size: 1rem;
+	margin-left: 90px;
+}
+
+.welcome__title {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 400;
+	text-align: left;
+	font-size: 64px;
+	line-height: 84px;
+	color: #060a24;
+}
+
+.welcome__title--dot {
+	color: #0000ec;
+}
+
+.welcome__title--cross {
+	text-decoration: line-through;
+}
+
+.welcome__caption {
+	margin-bottom: 50px;
+	width: 80%;
+}
+
+.welcome__button {
+	background-color: #00f3bb;
+	padding: 15px 30px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-decoration: none;
+	color: #060a24;
+	display: inline-block;
+	height: 56px;
+	width: 226px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "IBM Plex Mono", monospace;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.welcome__button:hover {
+	color: white;
+	background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+}
+
+/*
+* EPISODES SECTION
+*/
+
+.episodes {
+	font-size: 1rem;
+}
+
+.episodes__title {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 400;
+	text-align: left;
+	font-size: 48px;
+	line-height: 50px;
+	margin-bottom: 35px;
+}
+
+.episodes__title--special {
+	color: #ffffff;
+	margin-left: 80px;
+}
+
+.episodes__list {
+	font-size: 0;
+}
+
+.episode {
+	font-size: 1rem;
+	display: inline-block;
+	vertical-align: top;
+	width: 47%;
+	height: 155px;
+	overflow: hidden;
+}
+
+.episode:nth-child(odd) {
+	margin-right: 6%;
+}
+
+.episode:nth-child(n + 3) {
+	margin-top: 60px;
+}
+
+.episode__item {
+	width: 100%;
+	height: 180px;
+}
+
+/*
+* ABOUT SECTION
+*/
+
+.about {
+	font-size: 1rem;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.about__figure {
+	position: relative;
+	width: 40%;
+}
+
+.about__figure img {
+	position: absolute;
+	z-index: 10;
+	bottom: -200px;
+	width: 120%;
+}
+
+.about__description {
+	font-size: 0;
+}
+
+.about__figure,
+.about__description {
+	display: inline-block;
+	vertical-align: bottom;
+	font-size: 1rem;
+}
+
+.about__description {
+	margin-left: 8%;
+	width: 50%;
+}
+
+.description__title {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 400;
+	text-align: left;
+	font-size: 48px;
+	line-height: 50px;
+	margin-bottom: 35px;
+}
+
+.paragraph__estandar:nth-child(n + 2) {
+	margin-top: 15px;
+}
+
+/*
+* GUESTS SECTION
+*/
+
+.guests__title--special {
+	margin-left: 80px;
+	padding-top: 50px;
+}
+
+.guests {
+	list-style: none;
+	font-size: 0;
+	width: 100%;
+}
+
+.guests__item {
+	font-size: 0.5rem;
+	display: inline-block;
+	vertical-align: middle;
+	width: 33.3%;
+}
+
+.guests__item img {
+	display: block;
+	width: 100%;
+}
+
+/*
+* TOPICS SECTION
+*/
+
+.topics {
+	font-size: 1rem;
+	text-align: center;
+}
+
+.topics__title {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 400;
+	text-align: left;
+	font-size: 48px;
+	line-height: 50px;
+	margin-bottom: 35px;
+}
+
+.topics__title--special {
+	margin-left: 80px;
+	padding-top: 50px;
+}
+
+.topics__list {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 0;
+	display: block;
+	margin-top: 70px;
+}
+
+.topics__list--item {
+	font-size: 1rem;
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	text-align: center;
+}
+
+.topics__list--item h3 {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	margin-top: 20px;
+	padding: 0 20px;
+}
+
+/*
+* TOPICS SECTION
+*/
+
+.news {
+	font-size: 1rem;
+	text-align: center;
+}
+
+.news__title {
+	margin-bottom: 36px;
+	font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 42px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.news__button {
+	background-color: #00f3bb;
+	padding: 15px 30px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-decoration: none;
+	color: #060a24;
+	display: inline-block;
+	height: 56px;
+	width: 360px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "IBM Plex Mono", monospace;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.news__button:hover {
+	color: white;
+	background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+}
+
+/*
+* FOOTER SECTION
+*/
+
+.footer {
+	font-size: 0;
+	width: 100%;
+}
+
+.footer__rights,
+.footer__social {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+	font-size: 1rem;
+}
+
+.footer__social {
+	text-align: right;
+}
+
+.social {
+	display: inline-block;
+	list-style: none;
+}
+
+.social__item {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 40px;
+}
+
+.social__item a {
+	color: #060a24;
+	text-decoration: none;
+}
+
+.social__item a:hover {
+	color: #00f3bb;
+}
