@@ -26,6 +26,8 @@
 
 	.about__figure img {
 		bottom: -25px;
+		width: 22rem;
+		max-height: 36rem;
 	}
 
 	.episodes__title--special,
